@@ -1,0 +1,14 @@
+{
+    "version": "1.0",
+    "name": "An app",
+    "description": "This is an app",
+    "icons": {
+        "60": "/firefox_app_60x60.png?version=123ABC",
+        "128": "/firefox_app_128x128.png?version=123ABC",
+        "512": "/firefox_app_512x512.png?version=123ABC"
+    },
+    "developer": {
+        "name": "Me",
+        "url": "http://example.com/me"
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "cli-real-favicon",
+  "version": "0.0.7",
+  "description": "Node.js CLI for RealFaviconGenerator",
+  "scripts": {
+    "test": "mocha",
+    "example": "npm run example:generate && npm run example:inject",
+    "example:generate": "node ./real-favicon.js generate example/faviconDescription.json example/faviconData.json example/out",
+    "example:inject": "node ./real-favicon.js inject example/faviconData.json example/out example/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RealFaviconGenerator/cli-real-favicon.git"
+  },
+  "keywords": [
+    "favicon",
+    "cli",
+    "RealFaviconGenerator"
+  ],
+  "author": "Philippe Bernard <philippe@realfavicongenerator.net> (https://realfavicongenerator.net/)",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bugs": {
+    "url": "https://github.com/RealFaviconGenerator/cli-real-favicon/issues"
+  },
+  "homepage": "https://github.com/RealFaviconGenerator/cli-real-favicon#readme",
+  "bin": {
+    "real-favicon": "real-favicon.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "commander": "^2.20.0",
+    "glob": "^6.0.4",
+    "rfg-api": "^0.5.0"
+  }
+}
